@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "C411",
+        "description": "Sign in to your c411.org account.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "C411 - Re-authentication",
+        "description": "Your C411 credentials are no longer valid. Please enter them again.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password.",
+      "cannot_connect": "Failed to connect to c411.org.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Re-authentication was successful.",
+      "wrong_account": "The credentials are for a different account."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "C411 options",
+        "data": {
+          "scan_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "ratio": { "name": "Ratio" },
+      "uploaded": { "name": "Uploaded" },
+      "downloaded": { "name": "Downloaded" },
+      "upload_credit": { "name": "Upload credit" },
+      "reputation": { "name": "Reputation" },
+      "warnings": { "name": "Warnings" },
+      "min_ratio": { "name": "Minimum ratio" }
+    },
+    "binary_sensor": {
+      "can_download": { "name": "Can download" },
+      "is_freeleech": { "name": "Freeleech" },
+      "is_donor": { "name": "Donor" },
+      "is_warned": { "name": "Warned" }
+    }
+  }
+}

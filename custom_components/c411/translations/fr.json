@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "C411",
+        "description": "Connectez-vous à votre compte c411.org.",
+        "data": {
+          "username": "Nom d'utilisateur",
+          "password": "Mot de passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "C411 - Ré-authentification",
+        "description": "Vos identifiants C411 ne sont plus valides. Veuillez les saisir à nouveau.",
+        "data": {
+          "username": "Nom d'utilisateur",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nom d'utilisateur ou mot de passe invalide.",
+      "cannot_connect": "Échec de connexion à c411.org.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré.",
+      "reauth_successful": "Ré-authentification réussie.",
+      "wrong_account": "Les identifiants correspondent à un autre compte."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options C411",
+        "data": {
+          "scan_interval": "Intervalle de rafraîchissement (secondes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "ratio": { "name": "Ratio" },
+      "uploaded": { "name": "Envoyé" },
+      "downloaded": { "name": "Téléchargé" },
+      "upload_credit": { "name": "Crédit d'envoi" },
+      "reputation": { "name": "Réputation" },
+      "warnings": { "name": "Avertissements" },
+      "min_ratio": { "name": "Ratio minimum" }
+    },
+    "binary_sensor": {
+      "can_download": { "name": "Peut télécharger" },
+      "is_freeleech": { "name": "Freeleech" },
+      "is_donor": { "name": "Donateur" },
+      "is_warned": { "name": "Averti" }
+    }
+  }
+}
